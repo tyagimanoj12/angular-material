@@ -1,0 +1,15 @@
+<button mat-button (click)="openSnackBar('Item deleted','undo')">
+  Delete
+</button>
+<button mat-button (click)="openCustomSnackBar('Item deleted','undo')">
+  Custom Snack Bar
+</button>
+
+<button mat-raised-button (click)="openDialog()">
+  Open Dialog
+</button>
+
+<cdk-virtual-scroll-viewport itemSize="100" class="container">
+  <div *cdkVirtualFor="let number of numbers" class="number">{{number}}</div>
+</cdk-virtual-scroll-viewport>
+
